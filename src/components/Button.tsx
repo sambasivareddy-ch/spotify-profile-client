@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-import styles from "../styles/Button.module.css";
+import styles from "../styles/button.module.css";
 
 const Button: React.FC<{
     button_text?: string;
