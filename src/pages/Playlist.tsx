@@ -8,7 +8,7 @@ import { SpotifySavedShowsResponse } from "../models/spotify-types";
 import PlaylistCard from "../components/PlaylistCard";
 
 const Playlist: React.FC = () => {
-    const { data, loading } = useFetch<SpotifySavedShowsResponse>('http://localhost:3000/api/get-playlist')
+    const { data, loading } = useFetch<SpotifySavedShowsResponse>('https://spotify-clone-server-production.up.railway.app/api/get-playlist')
 
     return (
         <PageTemplate>

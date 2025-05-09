@@ -4,7 +4,7 @@ const useLoginStatus = () => {
     const navigate = useNavigate()
 
     const checkLoginStatus = async () => {
-        fetch('http://localhost:3000/auth/is-auth', {
+        fetch('https://spotify-clone-server-production.up.railway.app/auth/is-auth', {
         credentials: 'include' // ensures cookies are sent
         })
         .then(res => res.json())

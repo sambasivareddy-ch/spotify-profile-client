@@ -13,7 +13,7 @@ const Device: React.FC<{
     
     const handleClick = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/transfer-device/", {
+            const response = await fetch("https://spotify-clone-server-production.up.railway.app/api/transfer-device/", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

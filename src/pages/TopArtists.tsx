@@ -8,7 +8,7 @@ import { SpotifyArtistResponse } from "../models/spotify-types";
 import { HashLoader } from "react-spinners";
 
 const TopArtists: React.FC = () => {
-    const { data, loading } = useFetch<SpotifyArtistResponse>('http://localhost:3000/api/get-artists')
+    const { data, loading } = useFetch<SpotifyArtistResponse>('https://spotify-clone-server-production.up.railway.app/api/get-artists')
 
     return (
         <PageTemplate>

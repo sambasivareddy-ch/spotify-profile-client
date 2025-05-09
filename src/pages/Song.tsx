@@ -16,9 +16,9 @@ const Song: React.FC = () => {
     const {id} = useParams()
     const [updated, setUpdated] = useState(false);
 
-    const { data, loading } = useFetch<SpotifyTrack>(`http://localhost:3000/api/get-song/${id}`);
-    const queueInfo = useFetch<SpotifyQueueResponse>(`http://localhost:3000/api/get-queue/`);
-    const deviceInfo = useFetch<SpotifyAvailableDevices>(`http://localhost:3000/api/get-devices/`);
+    const { data, loading } = useFetch<SpotifyTrack>(`https://spotify-clone-server-production.up.railway.app/api/get-song/${id}`);
+    const queueInfo = useFetch<SpotifyQueueResponse>(`https://spotify-clone-server-production.up.railway.app/api/get-queue/`);
+    const deviceInfo = useFetch<SpotifyAvailableDevices>(`https://spotify-clone-server-production.up.railway.app/api/get-devices/`);
 
     return (
         <PageTemplate>
