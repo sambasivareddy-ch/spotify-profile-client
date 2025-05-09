@@ -13,20 +13,20 @@ import PlaylistSongs from "./pages/PlaylistSongs"
 function App() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const checkLoginStatus = async () => {
-      fetch('https://spotify-clone-server-production.up.railway.app/auth/is-auth', {
-        credentials: 'include' // ensures cookies are sent
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (!data.authenticated) {
-          navigate('/')
-        }
-      });
-    }
-    checkLoginStatus();
-  }, [])
+  // useEffect(() => {
+  //   const checkLoginStatus = async () => {
+  //     fetch('https://spotify-clone-server-production.up.railway.app/auth/is-auth', {
+  //       credentials: 'include' // ensures cookies are sent
+  //     })
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       if (!data.authenticated) {
+  //         navigate('/')
+  //       }
+  //     });
+  //   }
+  //   checkLoginStatus();
+  // }, [])
 
   return (
     <>
