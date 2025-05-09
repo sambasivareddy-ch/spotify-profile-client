@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "../components/Button";
-import styles from "../styles/Login.module.css";
+import styles from "../styles/login.module.css";
 
 const Login: React.FC = () => {
     const loginClickHandler = async () => {
