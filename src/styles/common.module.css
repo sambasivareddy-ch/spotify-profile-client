@@ -1,0 +1,122 @@
+.card_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card_wrapper a {
+    text-decoration: none;
+    color: #1db954;
+}
+
+.card_wrapper img {
+    width: 80px;
+    height: 80px;
+}
+
+.info_wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.info_main {
+    width: 90%;
+    margin: 50px 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.layout {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+}
+
+.layout-playlist, .layout-playlist-songs {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 14px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.artists {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+}
+
+/* .handler {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+} */
+
+button {
+    outline: none;
+    border: none;
+    color: #1db954;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    transform: scale(0.96);
+}
+
+.footer {
+    margin: 50px 0;
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.loading {
+    color: #1e88e5;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1100px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
