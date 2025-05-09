@@ -5,7 +5,7 @@ import styles from "../styles/login.module.css";
 
 const Login: React.FC = () => {
     const loginClickHandler = async () => {
-        window.location.href = "https://spotify-clone-server-production.up.railway.app/login/";
+        window.location.href = "https://spotify-clone-server-production.up.railway.app/login";
     };
 
     return (
