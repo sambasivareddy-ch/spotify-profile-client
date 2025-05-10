@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { Analytics } from "@vercel/analytics/next"
 
 import { Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
@@ -40,7 +39,6 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/" element={<Login />} />
       </Routes>
-      <Analytics/>
     </>
   )
 }
