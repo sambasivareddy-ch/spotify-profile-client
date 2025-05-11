@@ -16,6 +16,7 @@ const Login: React.FC = () => {
                     clickHandler={loginClickHandler}
                     className={styles["spotify-btn"]}
                 />
+                <p style={{color: "#fff"}}>Notice: Currently Spotify API is in Developer Mode, only Developer has access</p>
             </div>
         </div>
     );
