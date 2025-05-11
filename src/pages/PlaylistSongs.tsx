@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 const PlaylistSongs: React.FC = () => {
     const { id, name } = useParams();
-    const { data, loading } = useFetch<SpotifyPlaylistTracksResponse>(`https://spotify-siva-server.up.railway.app/api/get-playlist-track/${id}`)
+    const { data, loading } = useFetch<SpotifyPlaylistTracksResponse>(`${process.env.REACT_APP_SERVER_URL}/api/get-playlist-track/${id}`)
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
 

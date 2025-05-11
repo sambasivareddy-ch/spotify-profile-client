@@ -4,7 +4,7 @@ const useLoginStatus = () => {
     const navigate = useNavigate()
 
     const checkLoginStatus = async () => {
-        fetch('https://spotify-siva-server.up.railway.app/auth/is-auth', {
+        fetch(`${process.env.REACT_APP_SERVER_URL}/auth/is-auth`, {
         credentials: 'include' // ensures cookies are sent
         })
         .then(res => res.json())

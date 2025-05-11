@@ -13,7 +13,7 @@ const Device: React.FC<{
     
     const handleClick = async () => {
         try {
-            const response = await fetch("https://spotify-siva-server.up.railway.app/api/transfer-device", {
+            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/transfer-device`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

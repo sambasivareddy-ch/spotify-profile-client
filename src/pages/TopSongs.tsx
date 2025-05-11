@@ -8,7 +8,7 @@ import SongCard from "../components/SongCard";
 import { HashLoader } from "react-spinners";
 
 const TopSongs: React.FC = () => {
-    const { data, loading } = useFetch<SpotifyTopTracksResponse>('https://spotify-siva-server.up.railway.app/api/get-tracks')
+    const { data, loading } = useFetch<SpotifyTopTracksResponse>(`${process.env.REACT_APP_SERVER_URL}/api/get-tracks`)
 
     return (
         <PageTemplate>

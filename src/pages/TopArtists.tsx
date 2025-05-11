@@ -8,7 +8,7 @@ import { SpotifyArtistResponse } from "../models/spotify-types";
 import { HashLoader } from "react-spinners";
 
 const TopArtists: React.FC = () => {
-    const { data, loading } = useFetch<SpotifyArtistResponse>('https://spotify-siva-server.up.railway.app/api/get-artists')
+    const { data, loading } = useFetch<SpotifyArtistResponse>(`${process.env.REACT_APP_SERVER_URL}/api/get-artists`)
 
     return (
         <PageTemplate>
