@@ -13,7 +13,7 @@ const Device: React.FC<{
     
     const handleClick = async () => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/transfer-device`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER}/api/transfer-device`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

@@ -5,7 +5,7 @@ import styles from "../styles/login.module.css";
 
 const Login: React.FC = () => {
     const loginClickHandler = async () => {
-        window.location.href = `${process.env.REACT_APP_SERVER_URL}/login`;
+        window.location.href = `${import.meta.env.VITE_SERVER}/login`;
     };
 
     return (

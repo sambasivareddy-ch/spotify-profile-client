@@ -8,7 +8,7 @@ import { SpotifySavedShowsResponse } from "../models/spotify-types";
 import PlaylistCard from "../components/PlaylistCard";
 
 const Playlist: React.FC = () => {
-    const { data, loading } = useFetch<SpotifySavedShowsResponse>(`${process.env.REACT_APP_SERVER_URL}/api/get-playlist`)
+    const { data, loading } = useFetch<SpotifySavedShowsResponse>(`${import.meta.env.VITE_SERVER}/api/get-playlist`)
 
     return (
         <PageTemplate>

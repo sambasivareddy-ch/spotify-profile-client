@@ -16,9 +16,9 @@ const Song: React.FC = () => {
     const {id} = useParams()
     const [updated, setUpdated] = useState(false);
 
-    const { data, loading } = useFetch<SpotifyTrack>(`${process.env.REACT_APP_SERVER_URL}/api/get-song/${id}`);
-    const queueInfo = useFetch<SpotifyQueueResponse>(`${process.env.REACT_APP_SERVER_URL}/api/get-queue`);
-    const deviceInfo = useFetch<SpotifyAvailableDevices>(`${process.env.REACT_APP_SERVER_URL}/api/get-devices`);
+    const { data, loading } = useFetch<SpotifyTrack>(`${import.meta.env.VITE_SERVER}/api/get-song/${id}`);
+    const queueInfo = useFetch<SpotifyQueueResponse>(`${import.meta.env.VITE_SERVER}/api/get-queue`);
+    const deviceInfo = useFetch<SpotifyAvailableDevices>(`${import.meta.env.VITE_SERVER}/api/get-devices`);
 
     return (
         <PageTemplate>

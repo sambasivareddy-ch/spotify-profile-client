@@ -4,7 +4,7 @@ const useLoginStatus = () => {
     const navigate = useNavigate()
 
     const checkLoginStatus = async () => {
-        fetch(`${process.env.REACT_APP_SERVER_URL}/auth/is-auth`, {
+        fetch(`${import.meta.env.VITE_SERVER}/auth/is-auth`, {
         credentials: 'include' // ensures cookies are sent
         })
         .then(res => res.json())

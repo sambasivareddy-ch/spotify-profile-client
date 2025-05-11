@@ -8,10 +8,10 @@ import { SpotifyUserType } from "../models/spotify-types";
 import { HashLoader } from "react-spinners";
 
 const Profile: React.FC = () => {
-    const { data, loading } = useFetch<SpotifyUserType>(`${process.env.REACT_APP_SERVER_URL}/api/get-profile`)
+    const { data, loading } = useFetch<SpotifyUserType>(`${import.meta.env.VITE_SERVER}/api/get-profile`)
 
     const handleLogout = async () => {
-        await fetch(`${process.env.REACT_APP_SERVER_URL}/auth/logout`, {
+        await fetch(`${import.meta.env.VITE_SERVER}/auth/logout`, {
           method: 'POST',
           credentials: 'include',
         });
