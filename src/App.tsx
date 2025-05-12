@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const checkLoginStatus = async () => {
-      fetch('https://spotify-clone-server-production.up.railway.app/auth/is-auth', {
+      fetch('https://spotify-siva-server.up.railway.app/auth/is-auth', {
         credentials: 'include' // ensures cookies are sent
       })
       .then(res => res.json())
