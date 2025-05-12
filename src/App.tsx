@@ -1,5 +1,5 @@
-import { useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+// import { useEffect } from "react"
+// import { useNavigate } from "react-router-dom"
 
 import { Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
@@ -11,7 +11,7 @@ import Song from "./pages/Song"
 import PlaylistSongs from "./pages/PlaylistSongs"
 
 function App() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // useEffect(() => {
   //   const checkLoginStatus = async () => {
